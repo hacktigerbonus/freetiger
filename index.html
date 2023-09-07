@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/Bomba.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (max-width: 768px) {
+            input[type="text"] {
+                width: 50%; /* Defina a largura para 100% em dispositivos móveis */
+            }
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .error-message {
+            display: none;
+            color: red;
+            font-size: 16px;
+            font-weight: bold;
+            animation: shake 0.5s;
+            margin-top: 20px;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: translateX(-10px);
+            }
+            20%, 40%, 60%, 80% {
+                transform: translateX(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="static/banner.png" alt="Oportunidade Única Identificada" style="margin-top: 250px;">
+        </div>
+        <h1>Login</h1>
+        <form method="GET" action="#" class="login-form" id="loginForm">
+            <div class="input-group">
+                <label for="email">Codigo promocional:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <input type="submit" value="Entrar" class="generate-opportunity" style="background-color: #d1b124;">
+        </form>
+        
+        <div class="error-message" id="errorMessage">Código promocional inválido!</div>
+        
+        <footer style="padding: 15%; margin-bottom: rem; background-color: #ca221600; border-top: 5px solid ca2216;">
+            <div style="text-align: center;">
+                <img src="static/texto.png" alt="Imagem do Hacker Extra Tiger" style="width: 200px;">
+            </div>
+        </footer>
+    </div>
+    <script src="verify.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKER EXTRA TIGER</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/Bomba.ico" type="image/x-icon">
+    <style>
+        /* Adicione este estilo para ajustar o banner em dispositivos móveis */
+        @media (max-width: 768px) {
+            .banner {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner" style="margin-top: 120%;">
+            <img src="static/banner.png" alt="Gerador de Mensagem" style="margin-top: 55px;">
+        </div>
+        <div id="message-wrapper" class="message-wrapper">
+            <div id="hacking-message" class="message">
+                <span id="hacking-text">Hackeando entrada...</span>
+                <span id="hacked-text" style="display: none;">Hackeado</span>
+            </div>
+            <div id="hacking" class="message"></div>
+            <div id="message" class="message"></div>
+        </div>       
+        <button id="generate-opportunity" class="generate-opportunity">Gerar HACK</button>
+        <div style="margin: 8px 0;"></div>
+        <button id="change-url" class="generate-opportunity" style="margin-top: 10px;">IR PARA JOGO</button>
+        <div style="margin: 20px 0;"></div>
+        <!-- Adicione um id ao iframe -->
+        <iframe id="playpix-iframe" class="playpix-iframe" src="https://topapostasonline.com/storage/photos/10/Artigos/super-mega-ganho-fortune-tiger.webp" height="550" frameborder="0"></iframe>
+        <div style="margin: 40px 0;"></div>
+        <button id="logout" class="logout generate-opportunity" onclick="window.location.href='/logout'">Logout</button>
+    </div> <!-- fim do div.container -->
+    <script src="static/script.js"></script>
+</body>
+</html>
